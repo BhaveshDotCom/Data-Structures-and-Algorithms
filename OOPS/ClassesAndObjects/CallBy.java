@@ -1,4 +1,4 @@
-package Basics;
+package OOPS.ClassesAndObjects;
 
 public class CallBy {
 
