@@ -1,4 +1,4 @@
-package OOPS.ClassesAndObjects;
+package OOPS.ClassesAndObjects.StaticMethod;
 
 public class StaticKeyword {
 
@@ -22,6 +22,7 @@ class Identity {
     static String planet = "Earth";
     String country;
     int code;
+    
 
     static int count = 0;
 
