@@ -7,7 +7,7 @@ public class StaticAndFinal {
         Identity personTwo = new Identity("USA", 1); 
 
         personOne.printDetail();
-        personTwo.planet = "Mars";
+        personTwo.planet = "Mars"; // changes the single shared static variable, so the value becomes "Mars" for all objects of the class, not just personTwo
         personOne.printDetail();
 
         Identity.countObj();
