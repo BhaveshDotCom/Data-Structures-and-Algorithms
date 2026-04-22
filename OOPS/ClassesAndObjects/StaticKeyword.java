@@ -1,6 +1,6 @@
 package OOPS.ClassesAndObjects;
 
-public class StaticAndFinal {
+public class StaticKeyword {
 
     public static void main(String[] args) {
         Identity personOne = new Identity("India", 91); 
