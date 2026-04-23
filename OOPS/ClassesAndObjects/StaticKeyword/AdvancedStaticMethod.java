@@ -1,4 +1,4 @@
-package OOPS.ClassesAndObjects.StaticMethod;
+package OOPS.ClassesAndObjects.StaticKeyword;
 
 // A static method can directly access only static variables and static methods
 // It cannot directly access non-static (instance) members

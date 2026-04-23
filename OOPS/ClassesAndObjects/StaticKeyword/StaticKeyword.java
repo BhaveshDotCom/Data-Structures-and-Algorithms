@@ -1,4 +1,4 @@
-package OOPS.ClassesAndObjects.StaticMethod;
+package OOPS.ClassesAndObjects.StaticKeyword;
 
 public class StaticKeyword {
 
@@ -15,8 +15,6 @@ public class StaticKeyword {
 
     }
 }
-
-
 
 class Identity {
     static String planet = "Earth";
@@ -47,3 +45,16 @@ class Identity {
         System.out.println(count);
     }
 }
+
+/*
+Parameters cannot be declared static
+
+static is used for class-level members (variables/methods)
+Parameters are local to a method call (they exist only during execution)
+They belong to the stack (method scope), not the class
+So making them static has no meaning in Java’s memory model
+
+
+A top-level class cannot be static (A top-level class is already independent, so static has no meaning for it)
+Only a nested (inner) class can be declared static
+*/
