@@ -28,3 +28,7 @@ class Child extends Parent {
         // System.out.println("Trying to override the final method.");
     // }
 }
+
+/*
+Final Class cannot be inherited (no subclass allowed)
+*/
