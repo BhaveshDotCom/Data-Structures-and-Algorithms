@@ -1,15 +1,14 @@
 package OOPS.AccessModifiers;
 
-
 public class PrivateAccessModifier {
     public static void main(String[] args) {
         BankAccount myAccount = new BankAccount();
 
         System.out.println("Initial Balance: "+ myAccount.getBalance());
         myAccount.deposit(100000000);
-        myAccount.withdraw(233334253);
         System.out.println("Balance After Deposit: "+ myAccount.getBalance());
-    
+        myAccount.withdraw(321331);
+        System.out.println("Balance After Withdrawl "+ myAccount.getBalance());
     }
 }
 
