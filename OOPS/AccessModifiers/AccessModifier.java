@@ -1,14 +1,17 @@
 package OOPS.AccessModifiers;
 
-public class PrivateAccessModifier {
+public class AccessModifier {
+
     public static void main(String[] args) {
         BankAccount myAccount = new BankAccount();
+
 
         System.out.println("Initial Balance: "+ myAccount.getBalance());
         myAccount.deposit(100000000);
         System.out.println("Balance After Deposit: "+ myAccount.getBalance());
         myAccount.withdraw(321331);
         System.out.println("Balance After Withdrawl "+ myAccount.getBalance());
+        
     }
 }
 
@@ -33,6 +36,10 @@ class BankAccount {
         } else {
             balance -= amount;
         }
+    }
+
+    protected void currentBankBranch(){
+        System.out.println("Current Bank Branch: New Delhi");
     }
 
     public long getBalance(){
