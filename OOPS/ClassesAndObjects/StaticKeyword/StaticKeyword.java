@@ -4,10 +4,10 @@ public class StaticKeyword {
 
     public static void main(String[] args) {
         Identity personOne = new Identity("India", 91); 
-        Identity personTwo = new Identity("USA", 1); 
+        // Identity personTwo = new Identity("USA", 1); 
 
         personOne.printDetail();
-        personTwo.planet = "Mars"; // changes the single shared static variable, so the value becomes "Mars" for all objects of the class, not just personTwo
+        // personTwo.planet = "Mars"; // changes the single shared static variable, so the value becomes "Mars" for all objects of the class, not just personTwo
         personOne.printDetail();
 
         Identity.countObj();
