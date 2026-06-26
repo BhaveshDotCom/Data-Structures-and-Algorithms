@@ -5,10 +5,11 @@ public class CountNumberOfDigits {
         
         int num = 446773;
         int count = 0;
-        while(num>0){
+        while(num != 0){
             num/=10;
             count++;
         }
         System.out.println(String.format("It's a %d digit number", count));
+        System.out.println(4/10);
     }
 }
