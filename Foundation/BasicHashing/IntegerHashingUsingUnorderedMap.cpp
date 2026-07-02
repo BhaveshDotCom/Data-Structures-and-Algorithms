@@ -1,11 +1,11 @@
 #include<iostream>
-#include<map>
+#include<unordered_map>
 using namespace std;
 
 int main(){
 
     // Creating a map
-    map<int, int> hashMap;
+    unordered_map<int, int> hashMap;
     int arr[] = {1,2,3,3,3,4,4,5,14,15,15}; 
 
     // Precompute / Hashing
