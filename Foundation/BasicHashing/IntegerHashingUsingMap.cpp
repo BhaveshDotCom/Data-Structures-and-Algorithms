@@ -23,5 +23,6 @@ int main(){
     cout << "Frequency: " << hashMap.at(target) << endl;
 
     cout << hashMap.size() << endl; 
+    
     return 0; 
 }

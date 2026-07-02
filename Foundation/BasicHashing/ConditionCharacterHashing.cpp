@@ -20,5 +20,6 @@ int main(){
     cout << "Enter Character to find: ";
     cin >> userChar;
     cout << hashArr[userChar - 'a'] << endl;
+    
     return 0;
 }

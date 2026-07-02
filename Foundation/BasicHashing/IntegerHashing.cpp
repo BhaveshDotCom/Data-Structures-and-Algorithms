@@ -8,7 +8,6 @@ int main(){
     int hash[6] = {0};
 
     int size = sizeof(arr) / sizeof(arr[0]);
- 
     for(int i=0; i<size;i++){
         hash[arr[i]]+=1;
     }
