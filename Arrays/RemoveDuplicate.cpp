@@ -2,11 +2,11 @@
 #include <vector>
 using namespace std;
 
-int removeDuplicatesTwoPointers(vector<int>& arr){
+int removeDuplicatesTwoPointers(vector<int>& nums){
     int firstPtr = 0;
-    for(int secondPtr = 1; secondPtr<arr.size(); secondPtr++){
-        if(arr[firstPtr]!=arr[secondPtr]){
-            arr[firstPtr+1] = arr[secondPtr];
+    for(int secondPtr = 1; secondPtr<nums.size(); secondPtr++){
+        if(nums[firstPtr]!=nums[secondPtr]){
+            nums[firstPtr+1] = nums[secondPtr];
             firstPtr++;
 
         }
@@ -15,6 +15,6 @@ int removeDuplicatesTwoPointers(vector<int>& arr){
 }
 
 int main(){
-    vector<int> arr = {1,1,1,2,2,3,3};
-    cout << removeDuplicatesTwoPointers(arr) << endl;
+    vector<int> nums = {1,1,1,2,2,3,3};
+    cout << removeDuplicatesTwoPointers(nums) << endl;
 }
