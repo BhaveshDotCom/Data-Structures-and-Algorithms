@@ -11,7 +11,6 @@ int buyAndSell(vector<int>& nums){
         buy = min(buy, nums[i]);
         profit = max(profit, nums[i]-buy);
     }
-
     return profit;
 }
 
