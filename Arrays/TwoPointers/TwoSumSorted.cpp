@@ -1,24 +1,20 @@
 #include<iostream>
 #include<vector>
-#include<map>
 using namespace std;
 
 vector<int> twoSum(vector<int> nums, int target){
     int size = nums.size();
     int fptr = 0;
     int sptr = size-1;
-    vector<int> ans;
 
-    for(int i=fptr; i<=sptr; i++){
+    while(fptr<sptr){
         if(nums[fptr]+nums[sptr]>target) sptr--;
         else if(nums[fptr]+nums[sptr]<target) fptr++;
         else {
-            ans.push_back(fptr);
-            ans.push_back(sptr);
-            break;
+            return {fptr, sptr};
         }
     }
-    return ans;
+    return {-1,-1};
 }
 
 int main(){
