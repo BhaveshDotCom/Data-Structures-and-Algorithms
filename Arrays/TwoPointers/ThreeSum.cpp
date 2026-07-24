@@ -22,7 +22,7 @@ vector<vector<int>> threeSum(vector<int>& nums, int target){
             }
             else {
                 high--;
-            }
+            }   
         }
     }
     return triplets;
