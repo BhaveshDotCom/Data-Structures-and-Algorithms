@@ -3,7 +3,7 @@ using namespace std;
 
 int longestConsecutive(vector<int>& nums){
     if(nums.empty()) return 0;
-    sort(nums.begin(), nums.end());
+    sort(nums.begin(), nums.end()); // NlogN
     int longest = 1, length = 1;
     for(int i=1; i<nums.size(); i++){
         if(nums[i]==nums[i-1]) {

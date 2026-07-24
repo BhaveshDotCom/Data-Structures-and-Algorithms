@@ -25,6 +25,6 @@ int longestConsecutiveSequence(vector<int>& nums){
 }
 
 int main(){
-    vector<int> nums = {1,3,2,4,6};
+    vector<int> nums = {1,3,4};
     cout << longestConsecutiveSequence(nums) << endl;
 }
