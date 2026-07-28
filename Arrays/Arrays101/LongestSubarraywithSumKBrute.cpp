@@ -18,8 +18,8 @@ int longestSubarrayWithSumK(vector<int> nums, int targetSum){
 }
 
 int main(){
-    vector<int> nums = {1,1,2,1,1,1,2,3};
-    cout << longestSubarrayWithSumK(nums, 3) << endl;
+    vector<int> nums = {1,1,2,-1,-1,-1,2,3};
+    cout << longestSubarrayWithSumK(nums, -3) << endl;
 
     return 0;
 }
