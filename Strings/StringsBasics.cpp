@@ -75,7 +75,7 @@ void strings101(){
     getline(cin, strD); 
     cout << strD << endl;
 
-    for(int i=0; i<strD.length(); i++){
+    for(int i=0; i<strD.size(); i++){
         cout << strD[i] << ' ';
     }
     cout << endl;
