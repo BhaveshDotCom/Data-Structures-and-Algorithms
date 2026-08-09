@@ -58,11 +58,48 @@ vector<int> findAnagramsBetter(string s, string p){
     return res;
 }
 
+// Optimal (1 Map + Sliding Window)
+vector<int> findAnagramsOptimal(string s, string p){
+    vector<int> res;
+    int n=s.size(), k=p.size();
+    int count = k;
+    unordered_map<char, int> pMap;
+
+    for(char ch : p){
+        pMap[ch]++;
+    }
+
+    int left=0, right=0;
+    while(right<n){
+        char ch = s[right];
+
+        if(pMap[ch] > 0){
+            count--;
+        }
+        pMap[ch]--;
+
+        if(right-left+1 > k){
+            char leftCh = s[left];;
+            if(pMap[leftCh] >=0){
+                count++;
+            }
+            pMap[leftCh]++;
+            left++;
+        }
+
+
+        if(count == 0){
+            res.push_back(left);
+        }
+        right++;
+    } 
+    return res;
+}
 
 int main(){
     string s = "cbaebabacd";
     string p = "abc";
-    vector<int> anagramArr = findAnagramsBetter(s,p);
+    vector<int> anagramArr = findAnagramsOptimal(s,p);
     for(int idx : anagramArr){
         cout << idx << " ";
     }
